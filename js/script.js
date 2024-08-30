@@ -28,6 +28,17 @@ createApp({
                 this.activeIndex--;
             }
         }
+        // change active slide(new index)
+        // this.activeIndex = newIndex
+
+
+    },
+    mounted() {
+        // setInterval(function (){this.next();}, 3000)
+        //devo usare arrow function per scope di this
+        setInterval(() => {
+            this.next();
+        }, 3000);
     }
 }).mount('#app');
 
